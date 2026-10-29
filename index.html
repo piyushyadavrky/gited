@@ -10,10 +10,46 @@
     
   </p>
   <br><br>
-  <a href="./webdeeee/htmlfff/exercise7prac.html">click krr</a>
-  <br><br><br><br><br>
+  <a href="./webdeeee/htmlfff/exercise7prac.html" onclick="return checkPassword()">first link</a>
+  <br><br>
+    <a href="./webdeeee/htmlfff/exercise7prac2.html" onclick="return checkPassword2()">second link</a>
+<br><br><br>
   <p>yahan kya padh rha hai bkl<br>naam bta diya kaafi nhi</p>
     <br><br><br><br><br><br><br>
 <p>abhi bhi pade ja rha hai chutiya</p>
+
+
+  <script>
+    function checkPassword() {
+      // 1. Ek pop-up aayega jisme password maangega
+      let password = prompt("Password daal pehle:");
+
+      // 2. Yahan apna manpasand password set kar do (jaise "1234")
+      if (password === "param123") {
+        alert("Sahi password hai! Khul raha hai...");
+        return true;  // Link khul jayega
+      } else {
+        alert("Galat password! Nikal yahan se.");
+        return false; // Link KO KHULNE SE ROK DEGA
+      }
+    }
+
+    function checkPassword2() {
+      // 1. Ek pop-up aayega jisme password maangega
+      let password = prompt("Password daal pehle:");
+
+      // 2. Yahan apna manpasand password set kar do (jaise "1234")
+      if (password === "shamit123") {
+        alert("Sahi password hai! Khul raha hai...");
+        return true;  // Link khul jayega
+      } else {
+        alert("Galat password! Nikal yahan se.");
+        return false; // Link KO KHULNE SE ROK DEGA
+      }
+    }
+  </script>
+
+</body>
+</html>
 </body>
 </html>
